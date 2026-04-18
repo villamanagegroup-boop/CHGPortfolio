@@ -96,7 +96,7 @@ export default function Hero() {
               priority
             />
           </div>
-          <p className="text-[var(--rose)] text-sm md:text-base font-serif font-medium" style={{ letterSpacing: "0.15em" }}>
+          <p className="text-[var(--rose)] text-base md:text-xl font-serif font-medium" style={{ letterSpacing: "0.15em" }}>
             CHANEL HICKS-GRAY
           </p>
         </motion.div>
