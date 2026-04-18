@@ -63,6 +63,14 @@ const agents = [
     name: "Data & Reporting Agent",
     desc: "Pulls reports from your tools, summarizes trends, and delivers clean insights to your inbox on whatever cadence you need.",
   },
+  {
+    name: "Project Management Agent",
+    desc: "Tracks task progress, sends status updates to stakeholders, flags blockers, and keeps projects on deadline without manual check-ins.",
+  },
+  {
+    name: "Invoice & Billing Agent",
+    desc: "Generates invoices, sends payment reminders, logs receipts, and follows up on overdue accounts so nothing falls through the cracks.",
+  },
 ];
 
 function FadeIn({
