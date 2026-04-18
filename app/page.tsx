@@ -5,6 +5,7 @@ import Work from "./components/Work";
 import Testimonials from "./components/Testimonials";
 import StackdSection from "./components/StackdSection";
 import Services from "./components/Services";
+import HowIWork from "./components/HowIWork";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import ScrollProgress from "./components/ScrollProgress";
@@ -16,10 +17,11 @@ export default function Home() {
       <Nav />
       <Hero />
       <About />
-      <Work />
       <Testimonials />
+      <Work />
       <StackdSection />
       <Services />
+      <HowIWork />
       <Contact />
       <Footer />
     </main>

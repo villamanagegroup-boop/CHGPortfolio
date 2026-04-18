@@ -9,6 +9,7 @@ const projects = [
     category: "Venture Studio / SaaS",
     description:
       "An AI-powered build lab and venture studio that takes ideas from concept to launch. Full product strategy, brand, and technical architecture.",
+    outcome: "Idea to live product in under 6 weeks.",
     href: "https://www.stackdstudiosai.com",
     tags: ["Strategy", "Product", "AI"],
     accent: true,
@@ -19,6 +20,7 @@ const projects = [
     category: "Insurance Operations Platform",
     description:
       "End-to-end operations system for an insurance relocation housing firm. Placements, billing, inventory, and client management in one clean interface.",
+    outcome: "Replaced 3 separate tools with one unified platform.",
     href: "https://villa-group-conceirge2.vercel.app/",
     tags: ["Operations", "React", "Supabase"],
     accent: false,
@@ -29,6 +31,7 @@ const projects = [
     category: "Brand Website",
     description:
       "A refined, performance-first website for Midlothian's premier dance studio. Designed for enrollment, community, and brand presence.",
+    outcome: "Enrollment inquiries up significantly within the first month.",
     href: "https://www.capitalcoredance.com/",
     tags: ["Web Design", "Next.js", "Brand"],
     accent: false,
@@ -39,6 +42,7 @@ const projects = [
     category: "Entertainment Brand",
     description:
       "Website and brand system for a DMV-based hybrid touring ice and dance company. Built to carry the weight of a performance brand.",
+    outcome: "Full brand site shipped in 2 weeks, zero revision rounds.",
     href: "https://www.epcperform.com/",
     tags: ["Brand", "Motion", "Web"],
     accent: false,
@@ -49,6 +53,7 @@ const projects = [
     category: "Personal Growth App",
     description:
       "A daily clarity app and step-by-step reset program personalized to your energy archetype. Stop leaking and start living aligned.",
+    outcome: "365 AI-personalized daily cards delivered on demand.",
     href: "https://nicolesprojectapp.vercel.app/",
     tags: ["AI", "Next.js", "Supabase"],
     accent: false,
@@ -59,6 +64,7 @@ const projects = [
     category: "Operations System",
     description:
       "A field operations management system designed for service-based businesses who need real-time visibility into their teams and job pipelines.",
+    outcome: "",
     href: "#",
     tags: ["SaaS", "Operations", "Design"],
     accent: false,
@@ -168,8 +174,15 @@ export default function Work() {
                     {project.description}
                   </p>
 
+                  {/* Outcome */}
+                  {project.outcome && (
+                    <p className={`text-xs font-sans font-medium mt-4 flex items-center gap-1.5 ${project.accent ? "text-white/90" : "text-[var(--gold)]"}`}>
+                      <span>↑</span> {project.outcome}
+                    </p>
+                  )}
+
                   {/* Tags */}
-                  <div className="flex flex-wrap gap-2 mt-6">
+                  <div className="flex flex-wrap gap-2 mt-4">
                     {project.tags.map((tag) => (
                       <span
                         key={tag}

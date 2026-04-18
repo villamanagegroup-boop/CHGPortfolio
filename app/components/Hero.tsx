@@ -26,6 +26,16 @@ export default function Hero() {
             </span>
           </motion.div>
 
+          <motion.p
+            initial={{ opacity: 0, y: 12 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.2 }}
+            className="text-[var(--rose)] text-base md:text-xl font-serif font-medium mb-8"
+            style={{ letterSpacing: "0.15em" }}
+          >
+            CHANEL HICKS-GRAY
+          </motion.p>
+
           <motion.h1
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -77,6 +87,24 @@ export default function Hero() {
               Learn more
             </a>
           </motion.div>
+
+          <motion.div
+            initial={{ opacity: 0, y: 12 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 1.15 }}
+            className="flex items-center gap-8 pt-10 border-t border-[var(--border)]"
+          >
+            {[
+              { value: "12+", label: "Products Shipped" },
+              { value: "30+", label: "Automations Built" },
+              { value: "100%", label: "Client Satisfaction" },
+            ].map((stat) => (
+              <div key={stat.label}>
+                <p className="font-serif text-2xl font-semibold text-[var(--charcoal)]">{stat.value}</p>
+                <p className="text-xs font-sans text-[var(--taupe)] mt-0.5" style={{ letterSpacing: "0.08em" }}>{stat.label}</p>
+              </div>
+            ))}
+          </motion.div>
         </div>
 
         {/* RIGHT — photo */}
@@ -84,7 +112,7 @@ export default function Hero() {
           initial={{ opacity: 0, x: 20 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.9, delay: 0.3, ease: [0.22, 1, 0.36, 1] }}
-          className="flex flex-col items-center md:items-end gap-4"
+          className="flex justify-center md:justify-end"
         >
           <div className="relative w-64 h-80 md:w-full md:h-[480px] lg:h-[540px] max-w-xs">
             <div className="absolute -bottom-3 -right-3 w-full h-full rounded-sm border border-[var(--gold)] opacity-30" />
@@ -96,9 +124,6 @@ export default function Hero() {
               priority
             />
           </div>
-          <p className="text-[var(--rose)] text-base md:text-xl font-serif font-medium" style={{ letterSpacing: "0.15em" }}>
-            CHANEL HICKS-GRAY
-          </p>
         </motion.div>
 
       </div>

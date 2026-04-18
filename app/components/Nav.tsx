@@ -51,6 +51,15 @@ export default function Nav() {
                 </a>
               </li>
             ))}
+            <li>
+              <a
+                href="#contact"
+                className="text-sm font-sans font-medium text-white bg-[var(--rose)] px-5 py-2.5 rounded-sm hover:bg-[var(--charcoal)] transition-colors duration-300"
+                style={{ letterSpacing: "0.05em" }}
+              >
+                Book a Call
+              </a>
+            </li>
           </ul>
 
           {/* Mobile menu button */}
@@ -88,6 +97,15 @@ export default function Nav() {
                   </a>
                 </li>
               ))}
+              <li>
+                <a
+                  href="#contact"
+                  onClick={() => setMenuOpen(false)}
+                  className="text-sm font-sans font-medium text-white bg-[var(--rose)] px-7 py-3.5 rounded-sm hover:bg-[var(--charcoal)] transition-colors duration-300"
+                >
+                  Book a Call
+                </a>
+              </li>
             </ul>
           </motion.div>
         )}
