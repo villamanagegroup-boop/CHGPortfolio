@@ -26,16 +26,6 @@ export default function Hero() {
             </span>
           </motion.div>
 
-          <motion.p
-            initial={{ opacity: 0, y: 12 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.2 }}
-            className="text-[var(--rose)] text-lg md:text-2xl font-serif font-medium mb-8"
-            style={{ letterSpacing: "0.15em" }}
-          >
-            CHANEL HICKS-GRAY
-          </motion.p>
-
           <motion.h1
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -94,7 +84,7 @@ export default function Hero() {
           initial={{ opacity: 0, x: 20 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.9, delay: 0.3, ease: [0.22, 1, 0.36, 1] }}
-          className="flex justify-center md:justify-end"
+          className="flex flex-col items-center md:items-end gap-4"
         >
           <div className="relative w-64 h-80 md:w-full md:h-[480px] lg:h-[540px] max-w-xs">
             <div className="absolute -bottom-3 -right-3 w-full h-full rounded-sm border border-[var(--gold)] opacity-30" />
@@ -106,6 +96,9 @@ export default function Hero() {
               priority
             />
           </div>
+          <p className="text-[var(--rose)] text-sm md:text-base font-serif font-medium" style={{ letterSpacing: "0.15em" }}>
+            CHANEL HICKS-GRAY
+          </p>
         </motion.div>
 
       </div>
