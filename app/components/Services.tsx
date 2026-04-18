@@ -127,7 +127,7 @@ export default function Services() {
                 Every agent is built specifically for your workflow — not a chatbot wrapper, a real system.
               </p>
             </div>
-            <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
               {agents.map((agent, i) => (
                 <FadeIn key={agent.name} delay={i * 0.04}>
                   <div className="group border border-[var(--border)] bg-white rounded-sm p-5 hover:border-[var(--gold)] hover:-translate-y-1 hover:shadow-[0_8px_24px_rgba(232,184,75,0.15)] transition-all duration-300">

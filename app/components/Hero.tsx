@@ -6,7 +6,26 @@ import Image from "next/image";
 export default function Hero() {
   return (
     <section className="min-h-screen flex items-center px-8 md:px-12 pt-24 pb-20 max-w-6xl mx-auto relative">
-      <div className="w-full grid md:grid-cols-[70fr_30fr] gap-12 md:gap-16 items-center">
+      <div className="w-full grid md:grid-cols-[70fr_30fr] gap-10 md:gap-16 items-center">
+
+        {/* Photo — mobile only, shows above text */}
+        <motion.div
+          initial={{ opacity: 0, y: 16 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.9, delay: 0.2, ease: [0.22, 1, 0.36, 1] }}
+          className="flex justify-center md:hidden"
+        >
+          <div className="relative w-48 h-60">
+            <div className="absolute -bottom-3 -right-3 w-full h-full rounded-sm border border-[var(--gold)] opacity-30" />
+            <Image
+              src="/chanel.jpeg"
+              alt="Chanel Hicks-Gray"
+              fill
+              className="rounded-sm object-cover object-top"
+              priority
+            />
+          </div>
+        </motion.div>
 
         {/* LEFT */}
         <div>
@@ -40,7 +59,7 @@ export default function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.35, ease: [0.22, 1, 0.36, 1] }}
-            className="font-serif text-5xl md:text-6xl lg:text-[5.5rem] font-semibold text-[var(--charcoal)] leading-[0.97] mb-8"
+            className="font-serif text-[2.6rem] md:text-6xl lg:text-[5.5rem] font-semibold text-[var(--charcoal)] leading-[0.97] mb-8"
           >
             I turn operational
             <br />
@@ -60,7 +79,7 @@ export default function Hero() {
             initial={{ opacity: 0, y: 12 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.85 }}
-            className="text-[var(--taupe)] text-lg md:text-xl font-sans font-light max-w-lg leading-relaxed mb-12"
+            className="text-[var(--taupe)] text-base md:text-xl font-sans font-light max-w-lg leading-relaxed mb-12"
           >
             Creative strategist. AI systems architect. Vibe coder.
             Built for founders who want their operations to work
@@ -92,7 +111,7 @@ export default function Hero() {
             initial={{ opacity: 0, y: 12 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 1.15 }}
-            className="flex items-center gap-8 pt-10 border-t border-[var(--border)]"
+            className="flex flex-wrap items-center gap-6 md:gap-8 pt-10 border-t border-[var(--border)]"
           >
             {[
               { value: "12+", label: "Products Shipped" },
@@ -107,12 +126,12 @@ export default function Hero() {
           </motion.div>
         </div>
 
-        {/* RIGHT — photo */}
+        {/* RIGHT — photo (desktop only) */}
         <motion.div
           initial={{ opacity: 0, x: 20 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.9, delay: 0.3, ease: [0.22, 1, 0.36, 1] }}
-          className="flex justify-center md:justify-end"
+          className="hidden md:flex justify-end"
         >
           <div className="relative w-64 h-80 md:w-full md:h-[480px] lg:h-[540px] max-w-xs">
             <div className="absolute -bottom-3 -right-3 w-full h-full rounded-sm border border-[var(--gold)] opacity-30" />

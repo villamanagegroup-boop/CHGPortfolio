@@ -7,7 +7,7 @@ export default function Footer() {
         <p className="font-sans text-xs text-[var(--taupe)]" style={{ letterSpacing: "0.05em" }}>
           © {new Date().getFullYear()} Chanel Hicks-Gray. All rights reserved.
         </p>
-        <div className="flex items-center gap-6">
+        <div className="flex flex-wrap items-center justify-center gap-6">
           <a
             href="mailto:chanel@stackdstudiosai.com"
             className="font-sans text-xs text-[var(--taupe)] hover:text-[var(--gold)] transition-colors duration-300"
