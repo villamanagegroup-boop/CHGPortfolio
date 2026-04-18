@@ -59,6 +59,31 @@ export default function Contact() {
   return (
     <section id="contact" className="py-28 md:py-36 px-8 md:px-12">
       <div className="max-w-6xl mx-auto">
+
+        {/* How I Work strip */}
+        <FadeIn>
+          <p className="text-[var(--rose-text)] text-xs font-sans font-semibold mb-10" style={{ letterSpacing: "0.2em" }}>
+            THE PROCESS
+          </p>
+          <div className="grid md:grid-cols-3 gap-6 mb-20 pb-16 border-b border-[var(--border)]">
+            {[
+              { number: "01", title: "Discovery", desc: "We map your business, pain points, and goals before writing a single line of code." },
+              { number: "02", title: "Build", desc: "I design and develop the system, keeping you in the loop at every milestone." },
+              { number: "03", title: "Launch & Iterate", desc: "We ship, measure, and refine until it works exactly as intended — and gets better over time." },
+            ].map((step, i) => (
+              <FadeIn key={step.number} delay={i * 0.1}>
+                <div className="flex gap-5 items-start">
+                  <span className="font-serif text-[var(--gold)] text-sm font-medium shrink-0 pt-1">{step.number}</span>
+                  <div>
+                    <h4 className="font-serif text-lg font-medium text-[var(--charcoal)] mb-2">{step.title}</h4>
+                    <p className="text-[var(--taupe)] text-sm font-sans font-light leading-relaxed">{step.desc}</p>
+                  </div>
+                </div>
+              </FadeIn>
+            ))}
+          </div>
+        </FadeIn>
+
         <div className="grid md:grid-cols-2 gap-16 md:gap-24">
           {/* Left */}
           <div>
