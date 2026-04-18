@@ -11,6 +11,20 @@ const config: Config = {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        accent: "var(--accent)",
+        "accent-light": "var(--accent-light)",
+        "accent-muted": "var(--accent-muted)",
+        charcoal: "var(--charcoal)",
+        taupe: "var(--taupe)",
+        "warm-gray": "var(--warm-gray)",
+        border: "var(--border)",
+      },
+      fontFamily: {
+        serif: ["Playfair Display", "Georgia", "serif"],
+        sans: ["DM Sans", "-apple-system", "sans-serif"],
+      },
+      letterSpacing: {
+        widest: "0.2em",
       },
     },
   },
