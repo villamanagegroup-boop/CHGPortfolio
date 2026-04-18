@@ -57,7 +57,7 @@ export default function Contact() {
   };
 
   return (
-    <section id="contact" className="py-28 md:py-36 px-8 md:px-12">
+    <section id="contact" className="py-28 md:py-36 px-8 md:px-12 bg-white">
       <div className="max-w-6xl mx-auto">
 
         {/* How I Work strip */}

@@ -73,7 +73,7 @@ function FadeIn({
 
 export default function Services() {
   return (
-    <section id="services" className="py-28 md:py-36 px-8 md:px-12 bg-[var(--warm-gray)]">
+    <section id="services" className="py-28 md:py-36 px-8 md:px-12 bg-[var(--rose-light)]">
       <div className="max-w-6xl mx-auto">
         <FadeIn>
           <p
