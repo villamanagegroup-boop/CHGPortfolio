@@ -64,6 +64,10 @@ h1, h2, h3, h4 {
   border-radius: 2px;
 }
 
+section[id] {
+  scroll-margin-top: 80px;
+}
+
 @layer utilities {
   .text-balance {
     text-wrap: balance;
