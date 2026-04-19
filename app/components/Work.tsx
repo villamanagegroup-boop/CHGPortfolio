@@ -133,7 +133,6 @@ export default function Work() {
                       : "bg-white border-[var(--border)] hover:border-[var(--gold)] cursor-pointer hover:-translate-y-1 hover:shadow-[0_8px_30px_rgba(0,0,0,0.08)]"
                   }`}
                 >
-                  {/* Coming Soon badge */}
                   {project.comingSoon && (
                     <span className="absolute top-4 right-4 text-[10px] font-sans font-medium px-2.5 py-1 rounded-full bg-[var(--accent-muted)] text-[var(--gold)] border border-[var(--gold)] border-opacity-20"
                       style={{ letterSpacing: "0.1em" }}
@@ -142,7 +141,6 @@ export default function Work() {
                     </span>
                   )}
 
-                  {/* Category */}
                   <p
                     className={`text-xs font-sans font-medium mb-5 ${
                       project.accent ? "text-white/60" : "text-[var(--taupe)]"
@@ -152,7 +150,6 @@ export default function Work() {
                     {project.category.toUpperCase()}
                   </p>
 
-                  {/* Name */}
                   <h3
                     className={`font-serif text-xl font-medium mb-3 ${
                       project.accent
@@ -165,7 +162,6 @@ export default function Work() {
                     {project.name}
                   </h3>
 
-                  {/* Description */}
                   <p
                     className={`text-sm font-sans font-light leading-relaxed flex-grow ${
                       project.accent ? "text-white/80" : "text-[var(--taupe)]"
@@ -174,14 +170,12 @@ export default function Work() {
                     {project.description}
                   </p>
 
-                  {/* Outcome */}
                   {project.outcome && (
                     <p className={`text-xs font-sans font-medium mt-4 flex items-center gap-1.5 ${project.accent ? "text-white/90" : "text-[var(--gold)]"}`}>
                       <span>↑</span> {project.outcome}
                     </p>
                   )}
 
-                  {/* Tags */}
                   <div className="flex flex-wrap gap-2 mt-4">
                     {project.tags.map((tag) => (
                       <span
@@ -197,7 +191,6 @@ export default function Work() {
                     ))}
                   </div>
 
-                  {/* Arrow */}
                   {isClickable && (
                     <div
                       className={`mt-5 text-xs font-sans font-medium flex items-center gap-1.5 ${

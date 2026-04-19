@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import CursorFollower from "./components/CursorFollower";
+import Grain from "./components/Grain";
 
 export const metadata: Metadata = {
   title: "Chanel Hicks-Gray — Creative Strategist & Vibe Coder",
@@ -14,7 +16,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>
+        <Grain />
+        <CursorFollower />
+        {children}
+      </body>
     </html>
   );
 }

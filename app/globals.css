@@ -68,6 +68,15 @@ section[id] {
   scroll-margin-top: 80px;
 }
 
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-33.333%); }
+}
+@keyframes marquee-reverse {
+  from { transform: translateX(-33.333%); }
+  to   { transform: translateX(0); }
+}
+
 @layer utilities {
   .text-balance {
     text-wrap: balance;
