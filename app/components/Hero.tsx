@@ -61,11 +61,11 @@ export default function Hero() {
             transition={{ duration: 0.8, delay: 0.35, ease: [0.22, 1, 0.36, 1] }}
             className="font-serif text-[2.6rem] md:text-6xl lg:text-[5.5rem] font-semibold text-[var(--charcoal)] leading-[0.97] mb-8"
           >
-            I turn operational
+            I build the
             <br />
-            chaos into systems
+            solution —
             <br />
-            <em className="text-[var(--rose)] not-italic font-medium">that feel right.</em>
+            <em className="text-[var(--rose)] not-italic font-medium">end to end.</em>
           </motion.h1>
 
           <motion.div
@@ -81,9 +81,10 @@ export default function Hero() {
             transition={{ duration: 0.6, delay: 0.85 }}
             className="text-[var(--taupe)] text-base md:text-xl font-sans font-light max-w-lg leading-relaxed mb-12"
           >
-            Creative strategist. AI systems architect. Vibe coder.
-            Built for founders who want their operations to work
-            as beautifully as their brand.
+            Solutions architect, builder, and consultant. I take a problem from
+            strategy to working system &mdash; using AI when it&apos;s the right
+            tool and solid engineering everywhere else &mdash; then make sure
+            your team can run it.
           </motion.p>
 
           <motion.div
@@ -115,8 +116,8 @@ export default function Hero() {
           >
             {[
               { value: "12+", label: "Products Shipped" },
-              { value: "30+", label: "Automations Built" },
-              { value: "100%", label: "Client Satisfaction" },
+              { value: "30+", label: "Systems Built" },
+              { value: "6+", label: "Industries Served" },
             ].map((stat) => (
               <div key={stat.label}>
                 <p className="font-serif text-2xl font-semibold text-[var(--charcoal)]">{stat.value}</p>

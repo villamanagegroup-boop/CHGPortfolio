@@ -7,9 +7,9 @@ const row1 = [
 ];
 
 const row2 = [
-  "Systems Thinking", "Vibe Coding", "AI Strategy", "Operations Design",
-  "Product Architecture", "Human-Centered Design", "Creative Technology",
-  "Full-Stack AI",
+  "Problem Solving", "End-to-End Delivery", "Systems Design", "AI When It Fits",
+  "Automation", "Product Engineering", "Strategy & Advisory",
+  "Human-Centered Design",
 ];
 
 function Row({ items, reverse = false }: { items: string[]; reverse?: boolean }) {

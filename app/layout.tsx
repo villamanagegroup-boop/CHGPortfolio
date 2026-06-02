@@ -4,9 +4,9 @@ import CursorFollower from "./components/CursorFollower";
 import Grain from "./components/Grain";
 
 export const metadata: Metadata = {
-  title: "Chanel Hicks-Gray — Creative Strategist & Vibe Coder",
+  title: "Chanel Hicks-Gray — Solutions Architect & Builder",
   description:
-    "I design systems that feel good. Creative strategy, AI systems, and operations design for brands that want to move differently.",
+    "I solve business problems end to end — strategy, systems, and software. Sometimes that means AI, sometimes a clean workflow and good engineering. For founders, teams, and the work in between.",
 };
 
 export default function RootLayout({

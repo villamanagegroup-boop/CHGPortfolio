@@ -5,19 +5,6 @@ import { useRef } from "react";
 
 const categories = [
   {
-    label: "AI & Intelligence",
-    accent: "var(--gold)",
-    items: [
-      { name: "Claude (Anthropic)", note: "Opus · Sonnet · Haiku" },
-      { name: "OpenAI", note: "GPT-4o · o3" },
-      { name: "Gemini", note: "Google DeepMind" },
-      { name: "Perplexity AI", note: "Real-time research" },
-      { name: "Anthropic SDK", note: "Tool use · Caching · Agents" },
-      { name: "LangChain", note: "Agent orchestration" },
-      { name: "Vercel AI SDK", note: "Streaming · UI integration" },
-    ],
-  },
-  {
     label: "Frontend",
     accent: "var(--rose)",
     items: [
@@ -41,6 +28,19 @@ const categories = [
       { name: "Python", note: "Scripting · AI pipelines" },
       { name: "Redis", note: "Caching & queues" },
       { name: "Drizzle ORM", note: "Lightweight type-safe ORM" },
+    ],
+  },
+  {
+    label: "AI & Intelligence",
+    accent: "var(--gold)",
+    items: [
+      { name: "Claude (Anthropic)", note: "Opus · Sonnet · Haiku" },
+      { name: "OpenAI", note: "GPT-4o · o3" },
+      { name: "Gemini", note: "Google DeepMind" },
+      { name: "Perplexity AI", note: "Real-time research" },
+      { name: "Anthropic SDK", note: "Tool use · Caching · Agents" },
+      { name: "LangChain", note: "Agent orchestration" },
+      { name: "Vercel AI SDK", note: "Streaming · UI integration" },
     ],
   },
   {
@@ -118,10 +118,10 @@ export default function TechStack() {
           </p>
           <div className="flex flex-col md:flex-row md:items-end md:justify-between mb-16 gap-6">
             <h2 className="font-serif text-4xl md:text-5xl font-medium text-[var(--charcoal)] max-w-md leading-tight">
-              Built with the best tools.
+              The right tool for each job.
             </h2>
             <p className="text-[var(--taupe)] font-sans font-light text-base max-w-xs leading-relaxed">
-              Full-stack AI development across the entire product lifecycle — from prototype to production.
+              A full-stack toolkit — frontend to infrastructure, automation to AI. I pick what the problem needs, not the trendiest option.
             </p>
           </div>
         </FadeIn>

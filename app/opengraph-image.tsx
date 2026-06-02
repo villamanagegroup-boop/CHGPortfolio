@@ -1,7 +1,7 @@
 import { ImageResponse } from "next/og";
 
 export const runtime = "edge";
-export const alt = "Chanel Hicks-Gray — Creative Strategist & Vibe Coder";
+export const alt = "Chanel Hicks-Gray — Solutions Architect & Builder";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
@@ -70,10 +70,10 @@ export default function Image() {
             marginBottom: 40,
           }}
         >
-          I turn operational chaos
+          I build the solution,
           <br />
-          into systems that{" "}
-          <span style={{ color: "#C4547A" }}>feel right.</span>
+          {" "}
+          <span style={{ color: "#C4547A" }}>end to end.</span>
         </div>
 
         {/* Divider */}
@@ -97,7 +97,7 @@ export default function Image() {
             marginLeft: 24,
           }}
         >
-          Creative Strategist · AI Systems Architect · Vibe Coder
+          Solutions Architect · Builder · Consultant
         </div>
 
         {/* Bottom domain */}

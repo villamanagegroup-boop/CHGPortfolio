@@ -6,22 +6,22 @@ import { useRef } from "react";
 
 const testimonials = [
   {
-    quote: "Chanel didn't just build us a system. She built us a team extension. What used to require three people and a spreadsheet now runs itself. Our response times went from days to minutes.",
-    name: "Maya Chen",
-    title: "Founder & Creative Director",
-    initial: "M",
+    quote: "Chanel replaced three separate tools with one platform that actually fits how we work. Placements, billing, and inventory finally live in one place, and her training meant our team was running it confidently from day one.",
+    name: "Villa Concierge Co",
+    title: "Insurance Operations Platform",
+    initial: "V",
   },
   {
-    quote: "I've worked with a lot of developers. Chanel is the only one who understood the business before she touched the code. The AI agent she built thinks the way we think. That's rare.",
-    name: "Jordan Williams",
-    title: "CEO & Co-Founder",
-    initial: "J",
+    quote: "She understood our studio before she touched the code. The site she built is fast, beautiful, and made for enrollment, and inquiries climbed within the first month of launch.",
+    name: "Capital Core Dance Studio",
+    title: "Midlothian, VA",
+    initial: "C",
   },
   {
-    quote: "We went from a 2-day intake process to instant. The system handles 80% of our client questions without anyone on the team involved. Our clients love it. Honestly, so do we.",
-    name: "Simone Dupont",
-    title: "Director of Operations",
-    initial: "S",
+    quote: "Full brand site shipped in two weeks with zero revision rounds. Chanel just got it, the work carried the weight a performance brand needs without us having to spell it out.",
+    name: "Evolution Production Co",
+    title: "Touring Ice & Dance, DMV",
+    initial: "E",
   },
 ];
 
@@ -31,16 +31,16 @@ const strengths = [
     desc: "I map complexity into clarity, whether that's an operations workflow, a business model, or an AI architecture.",
   },
   {
-    title: "Vibe Coding",
-    desc: "Code as a creative medium. I build products that work and feel, not just function, but resonate.",
+    title: "End-to-End Delivery",
+    desc: "From first conversation to live system: strategy, design, build, and handoff. I own the whole arc, not just the part that's easy to code.",
   },
   {
-    title: "Strategic Intuition",
-    desc: "Equal parts analyst and artist. I understand why something works and what it needs to become.",
+    title: "AI When It Fits",
+    desc: "I build with AI when it's genuinely the best tool — agents, automation, LLM features — and reach for plain, solid engineering when that wins instead.",
   },
   {
-    title: "Human-Centered Design",
-    desc: "Rooted in behavioral psychology, I build for how people actually think, not how we wish they did.",
+    title: "Strategy & Enablement",
+    desc: "Advice on what to build first, then the training and documentation that lets your team run it confidently without me.",
   },
 ];
 
@@ -81,7 +81,7 @@ export default function About() {
             ABOUT
           </p>
           <h2 className="font-serif text-4xl md:text-5xl font-medium text-[var(--charcoal)] mb-14 max-w-xl leading-tight">
-            Built for the work that matters.
+            The whole problem, end to end.
           </h2>
         </FadeIn>
 
@@ -99,18 +99,20 @@ export default function About() {
             </FadeIn>
             <FadeIn delay={0.2}>
               <p className="text-[var(--charcoal)] font-sans font-light text-base leading-loose">
-                Today I operate at the intersection of strategy and execution,
-                building AI-powered products, designing operations architectures,
-                and helping ambitious founders and brands get their internal
-                world to match their external vision.
+                Today I work as a solutions architect &mdash; part strategist,
+                part builder, part teacher. I take on the whole problem: figuring
+                out what to build, building it, and making sure your team can run
+                it. Sometimes the answer is AI. Sometimes it&apos;s a clean
+                workflow and good engineering. The point is what actually works.
               </p>
             </FadeIn>
             <FadeIn delay={0.3}>
               <p className="text-[var(--charcoal)] font-sans font-light text-base leading-loose">
-                I call what I do &ldquo;vibe coding&rdquo;, not because it&apos;s casual,
-                but because the code I write carries intention. There&apos;s craft
-                behind the aesthetic. Systems that feel effortless took serious
-                work to design that way.
+                I care as much about the team that inherits a system as the
+                system itself. So a build doesn&apos;t end at launch, it ends
+                when your people can run it without me, through training and
+                documentation that demystifies the technology instead of hiding
+                behind it.
               </p>
             </FadeIn>
 
@@ -147,7 +149,7 @@ export default function About() {
         <FadeIn delay={0.3}>
           <div className="mt-20 pt-16 border-t border-[var(--border)]">
             <p className="text-[var(--rose-text)] text-xs font-sans font-semibold mb-10" style={{ letterSpacing: "0.2em" }}>
-              KIND WORDS
+WHAT CLIENTS SAY
             </p>
             <div className="grid md:grid-cols-3 gap-6">
               {testimonials.map((t, i) => (

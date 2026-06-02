@@ -36,13 +36,13 @@ const services = [
   },
   {
     number: "04",
-    title: "Vibe Coding / Product Build",
-    desc: "Full-stack product development with intention. I build web apps, internal tools, and SaaS products that are technically solid and aesthetically cohesive.",
+    title: "AI Product Engineering",
+    desc: "Full-stack product development with engineering rigor. Web apps, internal tools, and AI products that are technically solid, well-documented, and built to last — not throwaway prototypes.",
   },
   {
     number: "05",
-    title: "Operations & Growth",
-    desc: "Turning a working business into a well-oiled one. SOPs, team systems, client experience design, and the infrastructure that lets you grow without chaos.",
+    title: "Education & Enablement",
+    desc: "Workshops and team training that get your people fluent in AI, plus documentation and SOPs so the systems I build keep running long after the engagement ends. (Now booking workshops.)",
   },
 ];
 
@@ -87,7 +87,7 @@ export default function Services() {
               How I can help.
             </h2>
             <p className="text-[var(--taupe)] font-sans font-light text-base max-w-xs leading-relaxed">
-              I work best with founders and operators who are ready to build and want someone who can think strategically and execute technically.
+              I work best with founders and teams who are ready to build and want someone who can advise strategically, execute technically, and leave the team able to run it.
             </p>
           </div>
         </FadeIn>
